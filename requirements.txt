@@ -1,0 +1,10 @@
+torch
+torchvision
+numpy
+scikit-learn
+flask
+flask-cors
+pillow
+
+# Optional: sound notifications used in training scripts
+nava

@@ -1,0 +1,13 @@
+2026-08-03 10:39:10.166017-05:00 | Accuracy: [0.8354430379746836] with 50 epochs and initial hidden layer of 50.
+2026-08-03 10:48:04.845195-05:00 | Accuracy: [0.7522123893805309] with 50 epochs and initial hidden layer of 50.
+2026-08-03 10:58:47.072479-05:00 | Accuracy: [0.7640117994100295] with 30 epochs and initial hidden layer of 200.
+2026-08-03 11:28:36.599339-05:00 | Accuracy: [0.5339233038348082] with 10 epochs and initial hidden layer of 500.
+2026-08-03 11:39:36.160018-05:00 | Accuracy: [0.775811209439528] with 50 epochs and initial hidden layer of 500.
+2026-08-03 11:53:46.125221-05:00 | Accuracy: [0.7492625368731564] with 40 epochs and initial hidden layer of 100.
+2026-08-03 12:14:59.922293-05:00 | Accuracy: [0.46607669616519176] with 10 epochs and initial hidden layer of 100.
+2026-08-03 13:48:43.021215-05:00 | Accuracy: [0.551622418879056] with 20 epochs and initial hidden layer of 100.
+2026-08-04 08:17:27.387888-05:00 | Accuracy: [0.30383480825958703] with 2 epochs and initial hidden layer of 20.
+2026-08-04 08:32:20.931271-05:00 | Accuracy: [0.3421828908554572] with 40 epochs, initial hidden layer of 20, and kernal size 5.
+2026-08-04 08:38:30.342844-05:00 | Accuracy: [0.35398230088495575] with 40 epochs, initial hidden layer of 20, and kernal size 5.
+2026-08-04 08:51:37.058680-05:00 | Accuracy: [0.7492625368731564] with 40 epochs, initial hidden layer of 65, and kernal size 5.
+2026-08-04 08:58:21.626523-05:00 | Accuracy: [0.7640117994100295] with 40 epochs, initial hidden layer of 65, and kernal size 5.

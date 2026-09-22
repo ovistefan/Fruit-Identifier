@@ -1,0 +1,7 @@
+2026-08-03 12:18:42.113220-05:00 | Accuracy: [0.06487923775758919] with 1 epochs and initial hidden layer of 1024.
+2026-08-03 13:24:08.175235-05:00 | Accuracy: [0.3724573454464879] with 5 epochs and initial hidden layer of 1024.
+2026-08-04 03:55:31.937188-05:00 | Accuracy: [0.5411256370485265] with 35 epochs and initial hidden layer of 1024 and 6 hidden layers.
+2026-08-04 16:48:07.740277-05:00 | Accuracy: [0.590006647462885] with 35 epochs, initial hidden layer of 2048 and 6 fcl with 4 conv + batch + dropout.
+2026-08-05 23:57:52.501849-05:00 | Accuracy: [0.6290937292266785] with 35 epochs, initial hidden layer of 2048 and 6 fcl with 4 conv + batch + dropout.2026-08-06 11:29:11.722704-05:00 | Accuracy: [0.6616219809439398] with 35 epochs, initial hidden layer of 1024 and 8 fcl + ResNet50 .
+2026-08-11 12:32:22.927030-05:00 | Accuracy: [0.6898072235763351] with 60 epochs, initial hidden layer of 1024 and 8 fcl + ResNet50 .
+2026-08-12 14:47:57.205297-05:00 | Accuracy: [0.7111012630179482] with 100 epochs, initial hidden layer of 1024 and 8 fcl + ResNet50 .

@@ -1,0 +1,89 @@
+CosineAnnealing LR Scheduling
+-----------------------------
+Training epoch 1/10...
+Train Data Accuracy:5.69%
+Loss: [4.92370] - Time Elapsed: 8.99 minutes - Estimated time remaining: 80.94
+Training epoch 2/10...
+Train Data Accuracy:8.63%
+Loss: [4.42077] - Time Elapsed: 9.29 minutes - Estimated time remaining: 74.28
+Training epoch 3/10...
+Train Data Accuracy:9.25%
+Loss: [4.27592] - Time Elapsed: 9.29 minutes - Estimated time remaining: 65.03
+Training epoch 4/10...
+Train Data Accuracy:13.71%
+Loss: [4.16419] - Time Elapsed: 9.35 minutes - Estimated time remaining: 56.11
+Training epoch 5/10...
+Train Data Accuracy:13.37%
+Loss: [4.04738] - Time Elapsed: 9.28 minutes - Estimated time remaining: 46.39
+Training epoch 6/10...
+Train Data Accuracy:13.80%
+Loss: [3.94930] - Time Elapsed: 9.34 minutes - Estimated time remaining: 37.37
+Training epoch 7/10...
+Train Data Accuracy:17.61%
+Loss: [3.85771] - Time Elapsed: 9.33 minutes - Estimated time remaining: 27.98
+Training epoch 8/10...
+Train Data Accuracy:20.95%
+Loss: [3.76824] - Time Elapsed: 9.38 minutes - Estimated time remaining: 18.76
+Training epoch 9/10...
+Train Data Accuracy:21.72%
+Loss: [3.69164] - Time Elapsed: 9.37 minutes - Estimated time remaining: 9.37
+Training epoch 10/10...
+Train Data Accuracy:22.90%
+Loss: [3.64092] - Time Elapsed: 9.31 minutes - Estimated time remaining: 0.00
+Model Training Complete!
+Total time to train: 9.31
+
+Notes: Not very effective. Original static learning rate performed better but plateaud at 60% accuracy. Employ 
+Multi_Step scheduling to modify lr at pleateu epochs
+
+-----------------------------
+
+Multi_Step LR_Scheduling Milesstones
+Training epoch 1/15...
+Train Data Accuracy:42.45%
+Loss: [3.09823] - Time Elapsed: 10.04 minutes - Estimated time remaining: 140.51 minutes
+Training epoch 2/15...
+Train Data Accuracy:51.70%
+Loss: [2.32024] - Time Elapsed: 10.17 minutes - Estimated time remaining: 132.17 minutes
+Training epoch 3/15...
+Train Data Accuracy:54.24%
+Loss: [2.09261] - Time Elapsed: 10.01 minutes - Estimated time remaining: 120.12 minutes
+Training epoch 4/15...
+Train Data Accuracy:56.84%
+Loss: [1.97663] - Time Elapsed: 9.96 minutes - Estimated time remaining: 109.56 minutes
+Training epoch 5/15...
+Train Data Accuracy:59.16%
+Loss: [1.89861] - Time Elapsed: 9.88 minutes - Estimated time remaining: 98.76 minutes
+Training epoch 6/15...
+Train Data Accuracy:61.42%
+Loss: [1.84818] - Time Elapsed: 9.89 minutes - Estimated time remaining: 89.04 minutes
+Training epoch 7/15...
+Train Data Accuracy:71.81%
+Loss: [1.44125] - Time Elapsed: 9.90 minutes - Estimated time remaining: 79.17 minutes
+Training epoch 8/15...
+Train Data Accuracy:73.27%
+Loss: [1.31950] - Time Elapsed: 9.86 minutes - Estimated time remaining: 68.99 minutes
+Training epoch 9/15...
+Train Data Accuracy:75.50%
+Loss: [1.20226] - Time Elapsed: 9.83 minutes - Estimated time remaining: 58.96 minutes
+Training epoch 10/15...
+Train Data Accuracy:74.04%
+Loss: [1.16699] - Time Elapsed: 9.90 minutes - Estimated time remaining: 49.52 minutes
+Training epoch 11/15...
+Train Data Accuracy:76.92%
+Loss: [1.14732] - Time Elapsed: 9.81 minutes - Estimated time remaining: 39.24 minutes
+Training epoch 12/15...
+Train Data Accuracy:76.18%
+Loss: [1.12954] - Time Elapsed: 9.89 minutes - Estimated time remaining: 29.67 minutes
+Training epoch 13/15...
+Train Data Accuracy:76.55%
+Loss: [1.11336] - Time Elapsed: 9.86 minutes - Estimated time remaining: 19.72 minutes
+Training epoch 14/15...
+Train Data Accuracy:76.02%
+Loss: [1.08700] - Time Elapsed: 9.92 minutes - Estimated time remaining: 9.92 minutes
+Training epoch 15/15...
+Train Data Accuracy:77.35%
+Loss: [1.07755] - Time Elapsed: 9.91 minutes - Estimated time remaining: 0.00 minutes
+Model Training Complete!
+Total time to train: 9.91
+

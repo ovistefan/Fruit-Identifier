@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content = "width=device-width">
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <h2>Fruit Identifier</h2>
+                <h4>260+ Fruit Classes</h4>
+                <h3>Upload Image Below</h3>
+            </div>
+
+        <div class="input">
+           <p><span class="browse" id="browseLink">Browse Files</span></p>
+           <input type="file" id="imageInput" class="file" accept="image/png, image/jpeg, image/jpg"> 
+        </div>
+        <img id="preview">
+        <br>
+        <button id="predictBtn" disabled>Predict</button>
+        <div id="results"></div>
+    
+<style>
+  body { font-family: Arial, sans-serif; max-width: 480px; margin: 60px auto; text-align: center; }
+  #preview { max-width: 100%; margin-top: 16px; border-radius: 8px; display: none; }
+  #results { margin-top: 20px; text-align: left; }
+  .result-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #eee; }
+  button { margin-top: 12px; padding: 8px 16px; cursor: pointer; }
+  h2 {background-image: linear-gradient(red,orange, yellow, green ); background-clip: text; color: transparent; font-size: 75px;}
+  h2:hover {background-image: linear-gradient(blue, indigo, violet); background-clip: text; color: transparent; font-size: 75px;}
+</style>
+<script>
+  const API_URL = "http://127.0.0.1:5000/predict";
+  const imageInput = document.getElementById("imageInput");
+  const preview = document.getElementById("preview");
+  const predictBtn = document.getElementById("predictBtn");
+  const resultsDiv = document.getElementById("results");
+  let selectedFile = null;
+
+  imageInput.addEventListener("change", () => {
+    selectedFile = imageInput.files[0];
+    if (!selectedFile) return;
+    preview.src = URL.createObjectURL(selectedFile);
+    preview.style.display = "block";
+    predictBtn.disabled = false;
+    resultsDiv.innerHTML = "";
+  });
+
+  predictBtn.addEventListener("click", async () => {
+    if (!selectedFile) return;
+    predictBtn.disabled = true;
+    predictBtn.textContent = "Classifying...";
+
+    const formData = new FormData();
+    formData.append("image", selectedFile);
+
+    try {
+      const response = await fetch(API_URL, { method: "POST", body: formData });
+      const data = await response.json();
+      if (data.error) {
+        resultsDiv.innerHTML = `<p style="color:red">${data.error}</p>`;
+      } else {
+        resultsDiv.innerHTML = data.predictions
+          .map(p => `<div class="result-row"><span>${p.label}</span><span>${p.confidence}%</span></div>`)
+          .join("");
+      }
+    } catch (err) {
+      resultsDiv.innerHTML = `<p style="color:red">Could not reach the server. Try again later.</p>`;
+    }
+
+    predictBtn.disabled = false;
+    predictBtn.textContent = "Predict";
+  });
+</script>
+</main>
+</body>
+</html>
