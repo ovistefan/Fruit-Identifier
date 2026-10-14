@@ -13,7 +13,7 @@ from nava import play, stop
 gpu = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {gpu}")
 print(f"GPU Available: {torch.cuda.is_available()}")
-full_dataset = datasets.ImageFolder(root=r"C:\Users\sbelu\Desktop\Projects\FruitID\Fruit Identifier\Datasets\Resized_Fruits-262\208x256")
+full_dataset = datasets.ImageFolder(root=r"filepath")
 
 targets = np.array(full_dataset.targets)
 indices = np.arange(len(targets))
